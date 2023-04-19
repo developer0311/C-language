@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merriweather:ital@1&family=Sacramento&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family:'Sacramento', cursive;
+}
+h3{
+    font-family: 'Merriweather', serif;
+}
+p{
+    font-family: 'Bree Serif', serif;
+}
+a{
+    font-family: 'Bree Serif', serif;
+}
