@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merriweather:ital@1&family=Sacramento&display=swap');
+
+body{
+    text-align: center;
+    background-image: url('body-contact.jpg');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #030544;
+}
+.container-1{
+    width: 50vw;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-1 h2{
+    margin: 25px 0px;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #66BFBF;
+    text-shadow: 3px 3px 3px black;
+    padding-bottom: 10px;
+}
+.container-1 p{
+    margin: 25px 0px;
+    color: #a1f3ff;
+    text-shadow: 3px 3px 3px black;
+    text-align: left;
+    line-height: 23px;
+}
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-me h3{
+    display: inline-block;
+    height: 40px;
+    width: 50vw;
+    margin: 20px auto;
+}
+.contact-me h3 a{
+    display: inline-block;
+    margin: auto;
+    font-size:18px;
+    font-weight: normal;
+    color: #a1f3ff;
+    text-shadow: 3px 3px 3px black;;
+    transition: all 0.2s ease-in-out;
+}
+.contact-me h3 a:hover{
+    font-size: 20px;
+}
+
+
+@media only screen and (max-width:750px){
+    .container-1 p{
+        width: 80vw;
+        line-height: 19px;
+        font-size: 14px;
+    }
+    /*.contact-me h3{
+        width: 18vw;
+    }*/
+    .contact-me h3 a{
+        font-size:10px;
+    }
+    .contact-me h3 a:hover{
+        font-size: 12px;
+    }
+}
