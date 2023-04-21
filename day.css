@@ -49,6 +49,7 @@ body{
     margin: 35px auto;
     background-color: beige;
     padding: 40px 0px;
+    border-radius: 50px 0px;
     box-shadow: -10px 0px 15px -5px #67f9d5, 10px 0px 15px -5px #67f9d5;
 }
 .container-2 .content .ans-container .ans-row h3{
