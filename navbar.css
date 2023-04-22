@@ -7,11 +7,11 @@
 
 header{
     height: 65px;
-    /*width: 100vw;*/
     z-index: 1;
 }
 .navbar{
     position: fixed;
+    z-index:1;
     margin-top: 0;
     height: 65px;
     width: 100vw;
@@ -103,7 +103,6 @@ main{
 }
 footer{
     background-color:var(--main-bg-color);
-    /*width: 100vw;*/
     height: 90px;
     display: flex;
     flex-direction: column;
