@@ -102,8 +102,6 @@ main{
     min-height: calc(100vh - 65px - 90px);
 }
 footer{
-    /*position: absolute;
-    bottom: 0px;*/
     background-color:var(--main-bg-color);
     width: 100vw;
     height: 90px;
@@ -186,6 +184,10 @@ footer .copyright-messege p{
         margin: 0px auto;
         padding: 1px 10px;
         height:20px;
+    }
+    .navbar .search .searchbar:hover{
+        width: 30.6vw;
+        height: 22px;
     }
     .navbar .search .btn-search{
         font-size: 10px;
