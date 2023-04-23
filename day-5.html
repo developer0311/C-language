@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>easy coding</title>
+        <link rel="icon" href="photo/Diprati's_photo_logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&  family=Merriweather:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main-style.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/day.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="photo/Diprati's_photo_logo.png" alt="logo">
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="code.html" target="_blank" class="active">Codes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="rating.html">Rate us</a></li>
+                </ul>
+                <div class="search">
+                    <input type="searchbar" class="searchbar"   placeholder="Search here">
+                    <button class="btn-search">Search</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="container-1">
+                <div class="headings">
+                    <h1>Programming Lab Assignments</h1>
+                    <h3>Language : C</h3>
+                </div>
+            </div>
+        
+            <div class="container-2">
+                <div class="content">
+                    <div class="day-no">
+                        <h2>Day : 5 Assignments</h2>
+                        <img class="code-picture" src="coding-picture.gif">
+                    </div>
+                    <hr>
+                    <div class="ans-container">
+                        <div class="ans-row">
+                            <h3>Question : 1</h3><br>
+                            <p>
+                                //Write a C program to design calculator with basic operation using switch case.<br><br>
+                                #include&#60stdio.h&#62<br>
+                                int main(void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    char operation;<br>
+                                &nbsp&nbsp&nbsp&nbsp    float a,b,c;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter what operation you want do ['+','-','*','/'] : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%c",&operation);<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter First operand : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%f",&a);<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("Enter Second operand : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%f",&b);<br>
+                                &nbsp&nbsp&nbsp&nbsp    switch(operation)<br>
+                                &nbsp&nbsp&nbsp&nbsp    {<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case '+':<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    c=a+b;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case '-' :<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    c=a-b;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case '*':<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    c=a*b;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case '/':<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    c=a/b;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    default :<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nEnter Valid Inputs .");<br>
+                                &nbsp&nbsp&nbsp&nbsp    }<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\n%0.2f %c %0.2f : %0.2f",a,operation,b,c);<br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="">Output</a>
+                                <a class="btn" href="">Code Here</a>
+                            </div>
+                        </div>
+            
+                        <div class="ans-row">
+                            <h3>Question : 2</h3><br>
+                            <p>
+                                //Write a C program to read gender (M/F) and print corresponding gender .<br><br>
+                                #include&#60stdio.h&#62<br>
+                                int main(void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    char name[30],gender;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("Enter your gender ['M','F','O'] : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%c",&gender);<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter your name : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%s",name);<br>
+                                &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    switch(gender)<br>
+                                &nbsp&nbsp&nbsp&nbsp    {<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 'm':<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 'M':<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\n%s is male .",name);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 'f':<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 'F':<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\n%s is female .",name);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 'o':<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 'O':<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\n%s is others .",name);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    default :<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nPlease enter Valid Inputs .");<br>
+                                &nbsp&nbsp&nbsp&nbsp    }<br>
+                                &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="">Output</a>
+                                <a class="btn" href="">Code Here</a>
+                            </div>
+                        </div>
+                        <div class="ans-row">
+                            <h3>Question : 3</h3><br>
+                            <p>
+                                //Write a C program to read weekday number and print weekday name .<br><br>
+                                #include&#60stdio.h&#62<br>
+                                int main(void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    char week_day;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("Enter weekday number : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%c",&week_day);<br>
+                                &nbsp&nbsp&nbsp&nbsp    switch(week_day)<br>
+                                &nbsp&nbsp&nbsp&nbsp    {<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case '1':<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\n%cst day is Sunday .",week_day);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case '2':<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\n%cnd day is Monday .",week_day);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case '3':<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\n%crd day is Tuesday .",week_day);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case '4':<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\n%cth day is Wednesday .",week_day);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case '5':<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\n%cth day is Thursday .",week_day);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case '6':<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\n%cth day is Friday .",week_day);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case '7':<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\n%cth day is Saturday .",week_day);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    default :<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nPlease enter valid input .");<br>
+                                &nbsp&nbsp&nbsp&nbsp    }<br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="">Output</a>
+                                <a class="btn" href="">Code Here</a>
+                            </div>
+                        </div>
+                        <div class="ans-row">
+                            <h3>Question : 4</h3><br>
+                            <p>
+                                //Given three points A(x_1,y_1), B(x_2,y_2), C(x_3,y_3) determine whether they are collinear , i.e lie on the same line .<br><br>
+                                #include&#60stdio.h&#62<br>
+                                int main(void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    float x_1, y_1, x_2, y_2, x_3, y_3, m_1, m_2;<br>
+                                &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter first point [x1,y1] : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%f%f",&x_1,&y_1);<br>
+                                &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter second point [x2,y2] : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%f%f",&x_2,&y_2);<br>
+                                &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter third point [x3,y3] : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%f%f",&x_3,&y_3);<br>
+                                &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    m_1=(y_2-y_1)/(x_2-x_1);<br>
+                                &nbsp&nbsp&nbsp&nbsp    m_2=(y_3-y_2)/(x_3-x_2);<br>
+                                &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    if(m_1==m_2)<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nThree points lie on the same line .");<br>
+                                &nbsp&nbsp&nbsp&nbsp    else<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nThree points don't lie on the same line .");<br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="">Output</a>
+                                <a class="btn" href="">Code Here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="contact-me">
+                        <h2>If any difficulty then please contact .</h2>
+                        <a class="btn" href="mailto:dipratidas2004@gmail.com">CONTACT ME</a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="tw-fb-insta">
+                <a href="https://twitter.com/lover_boy_0311?t=4eIKd6hyT37TudLRK-Igwg&s=09">Twitter</a>
+                <a href="https://instagram.com/ek_villain_3114?igshid=YmMyMTA2M2Y=">Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=100034527431504&mibextid=ZbWKwL">Facebook</a>
+            </div>
+            <div class="copyright-messege">
+                <P>&copy; 2023 Diprati Das @ developer0311</P>
+            </div>
+        </footer>
+    </body>
+
+</html>
