@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>easy coding</title>
+        <link rel="icon" href="photo/Diprati's_photo_logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&  family=Merriweather:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main-style.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/day.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="photo/Diprati's_photo_logo.png" alt="logo">
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="code.html" target="_blank" class="active">Codes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="rating.html">Rate us</a></li>
+                </ul>
+                <div class="search">
+                    <input type="searchbar" class="searchbar"   placeholder="Search here">
+                    <button class="btn-search">Search</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="container-1">
+                <div class="headings">
+                    <h1>Programming Lab Assignments</h1>
+                    <h3>Language : C</h3>
+                </div>
+            </div>
+        
+            <div class="container-2">
+                <div class="content">
+                    <div class="day-no">
+                        <h2>Day : 1 Assignments</h2>
+                        <img class="code-picture" src="coding-picture.gif">
+                    </div>
+                    <hr>
+                    <div class="ans-container">
+                        <div class="ans-row">
+                            <h3>Question : 1</h3><br>
+                            <p>
+                                //Write a c program to calculate the average of three numbers .<br><br>
+                                #include&#60stdio.h&#62><br>
+                                int main(void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    float num_1, num_2, num_3;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter three numbers to calculate their avarage : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%f%f%f",&num_1 , &num_2, &num_3);<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nAvarage of given numbers : %0.2f", (num_1+num_2+num_3)/3);<br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="avarage-of-three-numbers.png">Output</a>
+                                <a class="btn" href="avarage-of-three-numbers.cpp">Code Here</a>
+                            </div>
+                        </div>
+            
+                        <div class="ans-row">
+                            <h3>Question : 2</h3><br>
+                            <p>
+                                //Write a c program to calculate product of first 10 natural number .<br><br>
+                                #include&#60stdio.h&#62<br>
+                                int main(void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    int i,p=1;<br>
+                                &nbsp&nbsp&nbsp&nbsp    for(i=1;i&lt;=10;i++)<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    p=p*i;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nProduct of first 10 natural number : %d\n", p);<br>
+                                &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="product-of-first-10-natural-number.png">Output</a>
+                                <a class="btn" href="product-of-first-10-natural-number.cpp">Code Here</a>
+                            </div>
+                        </div>
+                        <div class="ans-row">
+                            <h3>Question : 3</h3><br>
+                            <p>
+                                //Write a c program to calculate the perimeter and area of triangle .<br><br>
+                                #include&#60stdio.h&#62<br>
+                                #include&#60math.h&#62<br>
+                                int main(void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    float a,b,c,p,s,area;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter three sides of Triangle : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%f%f%f",&a,&b,&c);<br>
+                                &nbsp&nbsp&nbsp&nbsp    p=a+b+c;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nPerimeter of the Triangle : %0.2f", p);<br>
+                                &nbsp&nbsp&nbsp&nbsp    s = p/2;<br>
+                                &nbsp&nbsp&nbsp&nbsp    area = sqrt(s*(s-a)*(s-b)*(s-c));  <br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nArea of Triangle: %.2f\n", area); <br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="calculate-perimeter-and-area-of-triangle.png">Output</a>
+                                <a class="btn" href="calculate-perimeter-and-area-of-triangle.cpp">Code Here</a>
+                            </div>
+                        </div>
+                        <div class="ans-row">
+                            <h3>Question : 4</h3><br>
+                            <p>
+                                //Write a c program to calculate the perimeter and area of rectangle .<br><br>
+                                #include&#60stdio.h&#62<br>
+                                int main(void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    float a,b,p,area;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter length and breadth of the Rectangle : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%f%f",&a,&b);<br>
+                                &nbsp&nbsp&nbsp&nbsp    p=2*(a+b);<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nPerimeter of the Rectangle : %0.2f", p);    <br>
+                                &nbsp&nbsp&nbsp&nbsp    area = a*b;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nArea of Rectangle: %.2f\n", area); <br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="calculate-perimeter-and-area-of-rectangle.png">Output</a>
+                                <a class="btn" href="calculate-perimeter-and-area-of-rectangle.cpp">Code Here</a>
+                            </div>
+                        </div>
+                        <div class="ans-row">
+                            <h3>Question : 5</h3><br>
+                            <p>
+                                //Write a C program to convert temperature from Celcious to Fahrenheit .<br><br>
+                                #include&#60stdio.h&#62<br>
+                                int main(void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    float f,c;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter Temparature in Celcious : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%f",&c);<br>
+                                &nbsp&nbsp&nbsp&nbsp    f=(1.8*c)+32;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\n%0.2f Degree Celsious = %0.2f Degree Fahrenheit .",c,f);<br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="celcious-to-fahrenheit.png">Output</a>
+                                <a class="btn" href="celcious-to-fahrenheit.cpp">Code Here</a>
+                            </div>
+                        </div>
+                        <div class="ans-row">
+                            <h3>Question : 6</h3><br>
+                            <p>
+                                //Write a c program to convert temperature from Fahrenheit to Celcius .<br><br>
+                                #include&#60stdio.h&#62<br>
+                                int main(void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    float f,c;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter Temparature in Fahrenheit : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%f",&f);<br>
+                                &nbsp&nbsp&nbsp&nbsp    c=(f-32)*5/9;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\n%0.2f Degree Fahrenheit = %0.2f Degree Celsious .",f,c);<br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="fahrenheit-celcious.png">Output</a>
+                                <a class="btn" href="fahrenheit-celcious.cpp">Code Here</a>
+                            </div>>
+                        </div>
+                        <div class="ans-row">
+                            <h3>Question : 7</h3><br>
+                            <p>
+                                /*Write a C program to input basic salary of an employee and calculate the gross salary according to given conditions:-<br>
+                                1. 	Basic salary&lt;= 10000; <br>
+                                &nbsp&nbsp&nbsp&nbsp    HRA =20%<br>
+                                &nbsp&nbsp&nbsp&nbsp    DA = 80%<br>
+                                2. 	Basic salary is between 10001 to 20,000; <br>
+                                &nbsp&nbsp&nbsp&nbsp    HRA =25%<br>
+                                &nbsp&nbsp&nbsp&nbsp    DA = 90%<br>
+                                3. 	Basic salary>=20001<br>
+                                &nbsp&nbsp&nbsp&nbsp    HRA = 30%<br>
+                                &nbsp&nbsp&nbsp&nbsp    DA = 95%  */<br>
+                                &nbsp&nbsp&nbsp&nbsp<br><br>
+                                #include&#60stdio.h&#62<br>
+                                int main(void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    float gross_salary,basic_salary,da,hra;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter Basic salary of an employee : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%f",&basic_salary);<br>
+                                &nbsp&nbsp&nbsp&nbsp    if (basic_salary&lt;=10000)<br>
+                                &nbsp&nbsp&nbsp&nbsp    {<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    hra = (20 * basic_salary) / 100;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    da = (80 * basic_salary) / 100;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    gross_salary = basic_salary + hra + da;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nGross salary of the employee : %0.2f",gross_salary);<br>
+                                &nbsp&nbsp&nbsp&nbsp    }<br>
+                                &nbsp&nbsp&nbsp&nbsp    else if((basic_salary>10001)&&(basic_salary&lt;=20000))<br>
+                                &nbsp&nbsp&nbsp&nbsp    {<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    hra = (25 * basic_salary) / 100;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    da = (90 * basic_salary) / 100;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    gross_salary = basic_salary + hra + da;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nGross salary of the employee : %0.2f",gross_salary);<br>
+                                &nbsp&nbsp&nbsp&nbsp    }<br>
+                                &nbsp&nbsp&nbsp&nbsp    else if(basic_salary>=20001)<br>
+                                &nbsp&nbsp&nbsp&nbsp    {<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    hra = (30 * basic_salary) / 100;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    da = (95 * basic_salary) / 100;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    gross_salary = basic_salary + hra + da;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nGross salary of the employee : %0.2f",gross_salary);<br>
+                                &nbsp&nbsp&nbsp&nbsp    }<br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="calculate-the-gross-salary-1.png">Output</a>
+                                <a class="btn" href="calculate-the-gross-salary-1.cpp">Code Here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="contact-me">
+                        <h2>If any difficulty then please contact .</h2>
+                        <a class="btn" href="mailto:dipratidas2004@gmail.com">CONTACT ME</a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="tw-fb-insta">
+                <a href="https://twitter.com/lover_boy_0311?t=4eIKd6hyT37TudLRK-Igwg&s=09">Twitter</a>
+                <a href="https://instagram.com/ek_villain_3114?igshid=YmMyMTA2M2Y=">Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=100034527431504&mibextid=ZbWKwL">Facebook</a>
+            </div>
+            <div class="copyright-messege">
+                <P>&copy; 2023 Diprati Das @ developer0311</P>
+            </div>
+        </footer>
+    </body>
+
+</html>
