@@ -196,6 +196,9 @@ footer .copyright-messege p{
     main{
         min-height: calc(100vh - 120px - 90px);
     }
+        footer{
+        width: 100vw;
+    }
     footer .tw-fb-insta a{
         text-decoration: none;
         color:#917fb3 ;
@@ -204,10 +207,4 @@ footer .copyright-messege p{
         transition: all 0.3s ease-in-out;
         margin: 8px;
     }
-
-
-
-
-
-
 }
