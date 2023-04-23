@@ -51,6 +51,10 @@ body{
     padding: 40px 0px;
     border-radius: 50px 0px;
     box-shadow: -10px 0px 15px -5px #67f9d5, 10px 0px 15px -5px #67f9d5;
+    transition: all 0.5s ease-in-out;
+}
+.container-2 .content .ans-container .ans-row:hover{
+    box-shadow: -15px 0px 15px -5px #67f9d5, 15px 0px 15px -5px #67f9d5;
 }
 .container-2 .content .ans-container .ans-row h3{
     margin: 10px auto 10px 25px;
