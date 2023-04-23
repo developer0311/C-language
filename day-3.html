@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>easy coding</title>
+        <link rel="icon" href="photo/Diprati's_photo_logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&  family=Merriweather:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main-style.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/day.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="photo/Diprati's_photo_logo.png" alt="logo">
+                </div>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="code.html" target="_blank" class="active">Codes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="rating.html">Rate us</a></li>
+                </ul>
+                <div class="search">
+                    <input type="searchbar" class="searchbar"   placeholder="Search here">
+                    <button class="btn-search">Search</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="container-1">
+                <div class="headings">
+                    <h1>Programming Lab Assignments</h1>
+                    <h3>Language : C</h3>
+                </div>
+            </div>
+        
+            <div class="container-2">
+                <div class="content">
+                    <div class="day-no">
+                        <h2>Day : 1 Assignments</h2>
+                        <img class="code-picture" src="coding-picture.gif">
+                    </div>
+                    <hr>
+                    <div class="ans-container">
+                        <div class="ans-row">
+                            <h3>Question : 1</h3><br>
+                            <p>
+                                //Write a C program to check wether a number is divisible by 7 or not .<br><br>
+                                #include&#60stdio.h&#62<br>
+                                int main(void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    int num;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter a number to check either divisible by 7 or not : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%d",&num);<br>
+                                &nbsp&nbsp&nbsp&nbsp    if(num%7==0)<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\n%d is divisible by 7 .",num);<br>
+                                &nbsp&nbsp&nbsp&nbsp    else<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\n%d is not divisible by 7 .",num);<br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="divisible-by-7-or-not.png">Output</a>
+                                <a class="btn" href="ivisible-by-7-or-not.cpp">Code Here</a>
+                            </div>
+                        </div>
+            
+                        <div class="ans-row">
+                            <h3>Question : 2</h3><br>
+                            <p>
+                                //Write a C program to check wether a number is divisible by 5 and 11 or not .<br><br>
+                                #include&#60stdio.h&#62<br>
+                                int main(void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    int num;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter a number to check either divisible by both 5 and 11 or not : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%d",&num);<br>
+                                &nbsp&nbsp&nbsp&nbsp    if((num%5==0)&&(num%11==0))<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\n%d is divisible by both 5 and 11 .",num);<br>
+                                &nbsp&nbsp&nbsp&nbsp    else<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\n%d is not divisible by 5 and 11 .",num);<br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="divisible-by-5-and-11-or-not.png">Output</a>
+                                <a class="btn" href="divisible-by-5-and-11-or-not.cpp">Code Here</a>
+                            </div>
+                        </div>
+                        <div class="ans-row">
+                            <h3>Question : 3</h3><br>
+                            <p>
+                                //*Write a c program to calculate grade according to the marks using if-else,<br>
+                                if (marks&lt;50) : E ; if (marks>=50)&&(marks&lt;60) : D ; if (marks>=60)&&(marks&lt;70) : c ; if (marks>=70)&&(marks&lt;80) : B  ;  if (marks>=80)&&(marks&lt;90) : A   ;  if (marks>=90) : A+*/<br><br>
+                                <br>
+                                <br>
+                                #include&#60stdio.h&#62<br>
+                                int main(void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    int marks;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter your marks to check your Grade : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%d",&marks);<br>
+                                &nbsp&nbsp&nbsp&nbsp    if(marks&lt;0)<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nNegative marks is not allowed .");<br>
+                                &nbsp&nbsp&nbsp&nbsp    else if((marks>=0)&&(marks&lt;50))<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nYou got grade E .");<br>
+                                &nbsp&nbsp&nbsp&nbsp    else if((marks>=50)&&(marks&lt;60))<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nYou got grade D .");<br>
+                                &nbsp&nbsp&nbsp&nbsp    else if((marks>=60)&&(marks&lt;70))<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nYou got grade C .");<br>
+                                &nbsp&nbsp&nbsp&nbsp    else if((marks>=70)&&(marks&lt;80))<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nYou got grade B .");<br>
+                                &nbsp&nbsp&nbsp&nbsp    else if((marks>=80)&&(marks&lt;90))<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nYou got grade A .");<br>
+                                &nbsp&nbsp&nbsp&nbsp    else if((marks>=90)&&(marks&lt;=100))<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nYou got grade A+ .");<br>
+                                &nbsp&nbsp&nbsp&nbsp    else if(marks>100)<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nEnter The Number between 0 and 100 .");<br>
+                                &nbsp&nbsp&nbsp&nbsp    else<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nPlease Enter valid number !!");<br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="calculate-grade-according-to-number.png">Output</a>
+                                <a class="btn" href="calculate-grade-according-to-number.cpp">Code Here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="contact-me">
+                        <h2>If any difficulty then please contact .</h2>
+                        <a class="btn" href="mailto:dipratidas2004@gmail.com">CONTACT ME</a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="tw-fb-insta">
+                <a href="https://twitter.com/lover_boy_0311?t=4eIKd6hyT37TudLRK-Igwg&s=09">Twitter</a>
+                <a href="https://instagram.com/ek_villain_3114?igshid=YmMyMTA2M2Y=">Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=100034527431504&mibextid=ZbWKwL">Facebook</a>
+            </div>
+            <div class="copyright-messege">
+                <P>&copy; 2023 Diprati Das @ developer0311</P>
+            </div>
+        </footer>
+    </body>
+
+</html>
