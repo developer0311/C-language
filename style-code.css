@@ -42,7 +42,6 @@ hr{
     line-height: 23px;
 }
 .container-2{
-    width: 100vw;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
