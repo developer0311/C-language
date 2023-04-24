@@ -9,16 +9,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&  family=Merriweather:ital@1&family=Sacramento&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="main-style.css">
-        <link rel="stylesheet" href="navbar.css">
-        <link rel="stylesheet" href="day.css">
+        <link rel="stylesheet" href="css/main-style.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/day.css">
     </head>
 
     <body>
         <header>
             <nav class="navbar">
                 <div class="logo">
-                    <img src="Diprati's_photo_logo.png" alt="logo">
+                    <img src="photo/Diprati's_photo_logo.png" alt="logo">
                 </div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -87,8 +87,8 @@
                                 }<br>
                             </p>
                             <div class="code-btn">
-                                <a class="btn" href="">Output</a>
-                                <a class="btn" href="">Code Here</a>
+                                <a class="btn" href="basic-calculator-switch-case.png">Output</a>
+                                <a class="btn" href="basic-calculator-switch-case.cpp">Code Here</a>
                             </div>
                         </div>
             
@@ -127,8 +127,8 @@
                                 }<br>
                             </p>
                             <div class="code-btn">
-                                <a class="btn" href="">Output</a>
-                                <a class="btn" href="">Code Here</a>
+                                <a class="btn" href="print-corresponding-gender.png">Output</a>
+                                <a class="btn" href="print-corresponding-gender.cpp">Code Here</a>
                             </div>
                         </div>
                         <div class="ans-row">
@@ -171,8 +171,8 @@
                                 }<br>
                             </p>
                             <div class="code-btn">
-                                <a class="btn" href="">Output</a>
-                                <a class="btn" href="">Code Here</a>
+                                <a class="btn" href="print-weekday-name.png">Output</a>
+                                <a class="btn" href="print-weekday-name.cpp">Code Here</a>
                             </div>
                         </div>
                         <div class="ans-row">
@@ -206,6 +206,170 @@
                             <div class="code-btn">
                                 <a class="btn" href="">Output</a>
                                 <a class="btn" href="">Code Here</a>
+                            </div>
+                        </div>
+                        <div class="ans-row">
+                            <h3>Question : 5</h3><br>
+                            <p>
+                                //Write a C program to create a chart of factorial of 1 to 5 .<br><br>
+                                #include&lt;stdio.h><br>
+                                int main (void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    int i=1,j,fact=1;<br>
+                                &nbsp&nbsp&nbsp&nbsp    while(i&lt;=5)<br>
+                                &nbsp&nbsp&nbsp&nbsp    {<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    for(j=1;j&lt;=i;j++)<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    fact*=j;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nFactorial of %d is : %d",i,fact);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    fact=1;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    i++;<br>
+                                &nbsp&nbsp&nbsp&nbsp    }<br>
+                                &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="factorial-of-1-to-5.png">Output</a>
+                                <a class="btn" href="factorial-of-1-to-5.cpp">Code Here</a>
+                            </div>
+                        </div>
+                        <div class="ans-row">
+                            <h3>Question : 6</h3><br>
+                            <p>
+                                //Write a C program to create a chart of factorial of 1 to n .<br><br>
+                                #include&lt;stdio.h><br>
+                                int main (void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    int num,i=1,j,fact=1;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter the number upto which you want to get factorial : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%d",&num);<br>
+                                &nbsp&nbsp&nbsp&nbsp    while(i&lt;=num)<br>
+                                &nbsp&nbsp&nbsp&nbsp    {<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    for(j=1;j&lt;=i;j++)<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    fact*=j;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nFactorial of %d is : %d",i,fact);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    fact=1;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    i++;<br>
+                                &nbsp&nbsp&nbsp&nbsp    }<br>
+                                &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="factorial-of-1-to-n.png">Output</a>
+                                <a class="btn" href="factorial-of-1-to-n.cpp">Code Here</a>
+                            </div>
+                        </div>
+                        <div class="ans-row">
+                            <h3>Question : 7</h3><br>
+                            <p>
+                                //Write a C program to show maximum number (using switch-case)<br><br>
+                                #include&lt;stdio.h><br>
+                                int main (void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    int a,b,max;<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter two number : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%d%d",&a,&b);<br>
+                                &nbsp&nbsp&nbsp&nbsp    (a>b)?(max=1):(max=2);<br>
+                                &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    switch(max)<br>
+                                &nbsp&nbsp&nbsp&nbsp    {<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 1:<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\n%d is max.",a);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 2:<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\n%d is max.",b);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    default:<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nError!!");<br>
+                                &nbsp&nbsp&nbsp&nbsp    }<br>
+                                &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="max-num-switch_case.png">Output</a>
+                                <a class="btn" href="max-num-switch_case.cpp">Code Here</a>
+                            </div>
+                        </div>
+                        <div class="ans-row">
+                            <h3>Question : 8</h3><br>
+                            <p>
+                                //Write a C programm to find number of days in a month.<br>
+                                <br>
+                                #include&lt;stdio.h><br>
+                                int main(void)<br>
+                                {<br>
+                                &nbsp&nbsp&nbsp&nbsp    int year,num;	<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("\nEnter year : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%d",&year);<br>
+                                &nbsp&nbsp&nbsp&nbsp    printf("Enter the month number which number of day you want to know[Example : Enter 1 for 'January'] : ");<br>
+                                &nbsp&nbsp&nbsp&nbsp    scanf("%d",&num);<br>
+                                &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    switch(num)<br>
+                                &nbsp&nbsp&nbsp&nbsp    {<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 1:<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nJanuary has 31 days in the year %d.",year);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 2:<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    if(year%400)<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("February has 29 days in the year %d.",year);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    else if(year%100)<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("February has 28 days in the year %d.",year);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    else if(year%4)<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("February has 29 days in the year %d .",year);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 3:<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nMarch has 31 days in the year %d.",year);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 4:<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nApril has 30 days in the year %d.",year);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 5:<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nMay has 31 days in the year %d.",year);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 6:<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nJune has 30 days in the year %d.",year);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 7:<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nJuly has 31 days in the year %d.",year);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 8:<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nAugust has 31 days in the year %d.",year);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 9:<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nSeptember has 30 days in the year %d.",year);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 10:<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nOctober has 31 days in the year %d.",year);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 11:<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nNovember has 31 days in the year %d.",year);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    case 12:<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nDecember has 31 days in the year %d.",year);<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    break;<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    <br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    default :<br>
+                                &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp    printf("\nEnter valid inputs !!");<br>
+                                &nbsp&nbsp&nbsp&nbsp    }<br>
+                                &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                                }<br>
+                            </p>
+                            <div class="code-btn">
+                                <a class="btn" href="number-of-days-in-month.png">Output</a>
+                                <a class="btn" href="number-of-days-in-month.cpp">Code Here</a>
                             </div>
                         </div>
                     </div>
