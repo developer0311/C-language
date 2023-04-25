@@ -175,16 +175,17 @@ footer .copyright-messege p{
     }
     .navbar .search{
         height: 22px;
-        width: 50vw;
+        width: 60vw;
         margin: 5px auto;
     }
     .navbar .search .searchbar{
+        width: 40.5vw;
         margin: 0px auto;
         padding: 1px 10px;
         height:20px;
     }
     .navbar .search .searchbar:hover{
-        width: 30.6vw;
+        width: 40.5vw;
         height: 22px;
     }
     .navbar .search .btn-search{
