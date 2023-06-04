@@ -13,6 +13,14 @@
     padding: 10px 0px;
 }
 img{
+    width : 80vw;
     display: inline-block;
     margin: auto;
+}
+
+
+@media only screen and (max-width:1000px){
+    img{
+       width:80vw;
+    }
 }
