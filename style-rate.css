@@ -12,7 +12,7 @@
     text-align: center;
     padding: 10px 0px;
 }
-img{
+.gif{
 
     display: inline-block;
     margin: auto;
@@ -20,7 +20,7 @@ img{
 
 
 @media only screen and (max-width:800px){
-    img{
+    .gif{
        width:70vw;
     }
 }
